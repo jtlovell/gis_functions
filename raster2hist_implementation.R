@@ -9,5 +9,5 @@ raster2hist(r=r,levels=20, main="Test", xlab="value", ylab="count")
 raster2hist(r=r,levels=20, border=F,palette=rainbow)
 
 r2 <- cut(raster(filename),10)
-raster2hist(r=r2, levels="discrete" palette=rainbow)
+raster2hist(r=r2, levels="discrete", palette=rainbow)
 
