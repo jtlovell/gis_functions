@@ -11,7 +11,7 @@ raster2hist<-function(r, levels="discrete", palette=terrain.colors,...){
     tab<-table(fac)
     names(tab)<-labs
   }
-  pal<-palette(length(unique(fac)))
+  pal<-palette(length(tab))
   bp<-  barplot (tab, col=pal,...)
   return(list(table=tab,barplot.x=bp))
 }
